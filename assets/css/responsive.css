@@ -1,0 +1,141 @@
+/*Medium Layout: 1280*/
+@media only screen and (min-width: 992px) and (max-width: 1200px) {
+    .header-section .user-wrapper ul li a {
+        padding: 35px 15px;
+    }
+
+    .slider-section .sliders .single-slide-item {
+        height: 300px;
+    }
+
+    .shop-list-section .single-shop-list .shop-thumb {
+        padding: 10px;
+    }
+
+    .promo-section .promo-items .single-promo .promo-cont h4 {
+        margin-top: 0;
+    }
+
+    .promo-section .promo-items .single-promo .promo-cont {
+        height: 70%;
+    }
+}
+
+/*Tablet Layout: 768px*/
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+    .container-fluid {
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+
+    .header-section .user-wrapper ul li a {
+        padding: 25px 10px;
+    }
+
+    .slider-section .sliders .single-slide-item {
+        height: 245px;
+    }
+
+    .shop-list-section .single-shop-list .shop-thumb {
+        padding: 10px;
+    }
+
+    .promo-section .promo-items .single-promo {
+        width: 50%;
+        float: left;
+    }
+
+    .payment-option {
+        float: left;
+        margin-top: 25px;
+    }
+
+    .apps-info {
+        float: left !important;
+    }
+
+    .c-info {
+        float: left;
+        text-align: left;
+    }
+
+    .f-social-link {
+        float: left !important;
+        text-align: left;
+    }
+}
+
+/*Mobile Layout: 320px*/
+@media only screen and (max-width: 767px) {
+    .container-fluid {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    .header-section .navigation {
+        margin-left: auto;
+        margin-right: 10px;
+    }
+
+    .main-search {
+        display: none;
+    }
+
+    .user-wrapper {
+        display: none;
+    }
+
+    .slider-section .sliders .single-slide-item {
+        height: 150px;
+    }
+
+    .section-padding {
+        padding-top: 25px;
+    }
+
+    .shop-list-section .single-shop-list .shop-thumb {
+        padding: 10px;
+    }
+
+    .feat-categories .single-cat a {
+        text-align: left !important;
+        padding-left: 10px;
+    }
+
+    footer {
+        margin-bottom: 50px;
+    }
+
+    .contact-form {
+        position: initial;
+        width: 100%;
+        border-radius: 0;
+        overflow: hidden;
+    }
+
+    .payment-option {
+        float: left;
+        margin-top: 25px;
+    }
+
+    .apps-info {
+        float: left !important;
+    }
+
+    .c-info {
+        float: left;
+        text-align: left;
+    }
+
+    .f-social-link {
+        float: left !important;
+        text-align: left;
+    }
+}
+
+/*Wide Mobile Layout: 480px*/
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+    .slider-section .sliders .single-slide-item {
+        height: 225px;
+    }
+}

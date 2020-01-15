@@ -1,0 +1,29 @@
+/*side navigation start*/
+.sidenav::-webkit-scrollbar {
+  width: 0;
+}
+.sidenav-wrapper{
+  h5{
+    text-transform: capitalize;
+    font-size: 1em;
+    font-weight: 600;
+  }
+  ul{
+    li{
+      a{
+        text-transform: capitalize;
+        img{
+          width: auto;
+          height: 80%;
+        }
+      }
+    }
+  }
+  p{
+    i{
+      position: relative;
+      top: 8px;
+    }
+  }
+}
+/*side navigation end*/

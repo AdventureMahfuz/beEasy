@@ -1,0 +1,61 @@
+/*header style start*/
+.header-section {
+  background: #ffffff;
+  @include shadow(0 5px 15px rgba(0, 0, 0, 0.04));
+  .logo {
+    width: 180px;
+    padding: 15px 0;
+    text-align: center;
+    img {
+      width: auto;
+    }
+  }
+  .navigation {
+    display: inline-flex;
+    margin-left: 20px;
+    i {
+      margin-top: auto;
+      margin-bottom: auto;
+      cursor: pointer;
+    }
+  }
+  .main-search {
+    position: relative;
+    button {
+      position: absolute;
+      right: 0;
+      top: 0;
+      background: initial;
+      padding: 14px;
+    }
+  }
+  .user-wrapper{
+    ul{
+      text-align: right;
+      li{
+        display: inline-block;
+        a{
+          display: block;
+          padding: 35px 20px;
+          .cart{
+            position: relative;
+            .item-count{
+              position: absolute;
+              top: -25px;
+              right: -15px;
+              color: #fff;
+              width: 25px;
+              height: 25px;
+              line-height: 25px;
+              @include radius(50%);
+              text-align: center;
+              background: $highlight;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+/*header style end*/

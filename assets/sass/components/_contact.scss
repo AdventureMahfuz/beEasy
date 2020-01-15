@@ -1,0 +1,74 @@
+/*contact us section start*/
+.contact-us-section{
+  .contact-form{
+    h3{
+      font-size: 2em;
+    }
+    .input-field{
+      input{
+        border-bottom-color: #fff;
+        &:focus{
+          color: #ffffff;
+          border-bottom-color: #fff;
+        }
+      }
+      label{
+        color: #ffffff;
+        &:focus{
+          color: #ffffff;
+        }
+      }
+    }
+  }
+}
+input[type=text]:not(.browser-default):focus:not([readonly]) + label{
+  color: $highlight;
+}
+input[type=email]:not(.browser-default):focus:not([readonly]) + label{
+  color: #ffffff;
+}
+.gmap iframe {
+  width: 100%;
+  height: 500px;
+}
+
+section.contact-us-section {
+  position: relative;
+}
+
+.contact-form {
+  position: absolute;
+  right: 10%;
+  top: 10%;
+  width: 400px;
+  background: rgba(0, 128, 0, .6);
+  padding: 30px;
+  box-shadow: 0 0 5px;
+  border-radius: 10px;
+}
+.form-control {
+  background: initial;
+  color: #fff;
+}
+.contact-form textarea::-webkit-input-placeholder {
+  color: #fff;
+}
+
+.contact-form textarea::-moz-placeholder {
+  color: #fff;
+}
+
+.contact-form textarea:-ms-input-placeholder {
+  color: #fff;
+}
+
+.contact-form textarea:-moz-placeholder {
+  color: #fff;
+}
+
+.form-control:focus {
+  box-shadow: none;
+  background: initial;
+  color: #fff;
+}
+/*contact us section end*/

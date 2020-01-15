@@ -1,0 +1,40 @@
+@mixin transform($v) {
+  -webkit-transform: $v;
+  -ms-transform: $v;
+  transform: $v;
+}
+@mixin radius($v){
+  -webkit-border-radius: $v;
+  -moz-border-radius: $v;
+  border-radius: $v;
+}
+@mixin transiton($v){
+  -webkit-transition: $v;
+  -moz-transition: $v;
+  -ms-transition: $v;
+  -o-transition: $v;
+  transition: $v;
+}
+@mixin opacity($opacity) {
+  opacity: $opacity;
+  $opacity-ie: $opacity * 100;
+  filter: alpha(opacity = $opacity-ie); //IE8
+}
+@mixin shadow($v){
+  -webkit-box-shadow: $v;
+  -moz-box-shadow: $v;
+  box-shadow: $v;
+}
+@mixin keyframes($v) {
+  @-webkit-keyframes #{$v} {
+    @content;
+  }
+
+  @-moz-keyframes #{$v} {
+    @content;
+  }
+
+  @keyframes #{$v} {
+    @content;
+  }
+}

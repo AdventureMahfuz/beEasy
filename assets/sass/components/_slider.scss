@@ -1,0 +1,28 @@
+/*slider section start*/
+.slider-section {
+  .sliders {
+    .single-slide-item{
+      height: 400px;
+      img{
+        height: 100%;
+      }
+    }
+    .owl-nav {
+      position: absolute;
+      top: 0;
+      right: 0;
+      button {
+        span {
+          @extend %owl-span;
+          color: #ffffff;
+          background: $highlight;
+          @include radius(50%);
+          margin: 10px;
+          font-size: 1.5em;
+        }
+      }
+    }
+  }
+}
+
+/*slider section end*/

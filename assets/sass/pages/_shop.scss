@@ -1,0 +1,61 @@
+/*single shop page hero wrapper start*/
+.ssp-hero{
+  .ssp-hero-thumb{
+    width: 75%;
+    float: left;
+    @include radius(10px);
+    overflow: hidden;
+  }
+  .ssp-hero-info{
+    width: 25%;
+    float: right;
+    padding: 15px;
+    .ssp-logo{
+      margin-bottom: 15px;
+    }
+    p{
+      i{
+        position: relative;
+        top: 5px;
+        color: $primary;
+        margin-right: 10px;
+      }
+    }
+  }
+}
+.ssp-product-section{
+  .ssp-sidebar{
+    border-left: 1px solid #ddd;
+    border-right: 1px solid #ddd;
+    .sidebar-search{
+      position: relative;
+      button{
+        position: absolute;
+        right: 0;
+        bottom: 10px;
+        border: none;
+        background: none;
+        cursor: pointer;
+      }
+    }
+    ul{
+      li{
+        a{
+          display: block;
+          padding: 10px;
+          text-transform: capitalize;
+          i{
+            float: right;
+            position: relative;
+            top: 3px
+          }
+          &:hover{
+            background: #ddd;
+            @include radius(30px);
+          }
+        }
+      }
+    }
+  }
+}
+/*single shop page hero wrapper end*/

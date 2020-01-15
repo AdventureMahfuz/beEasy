@@ -1,0 +1,30 @@
+/*Shop list section start*/
+.shop-list-section{
+  .single-shop-list{
+    margin-bottom: 15px;
+    text-align: center;
+    @include radius(5px);
+    @include transform(scale(1));
+    @include transiton(all .5s);
+    &:hover{
+      @include transform(scale(1.1));
+      @include transiton(all .5s);
+    }
+    .shop-thumb{
+      padding: 10px 40px;
+      text-align: center;
+    }
+    .shop-name{
+      h5{
+        font-size: .8em;
+        line-height: 1.4em;
+        font-weight: 600;
+        color: $gray;
+        text-transform: capitalize;
+        margin: 0;
+        height: 45px;
+      }
+    }
+  }
+}
+/*Shop list section end*/
