@@ -1,0 +1,479 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>View Cart | beEasy</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/font-awesome.min.css">
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/materialize.min.css">
+    <link rel="stylesheet" href="assets/css/owl.carousel.min.css">
+    <link rel="stylesheet" href="assets/css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="assets/css/jquery.exzoom.css">
+    <!--<link rel="stylesheet" href="assets/css/slicknav.min.css">-->
+    <!--<link rel="stylesheet" href="assets/css/animate.min.css">-->
+    <!--<link rel="stylesheet" href="assets/css/magnific-popup.css">-->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/responsive.css">
+
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    <![endif]-->
+</head>
+<body>
+<div class="container"></div>
+<!--header section start-->
+<header class="header-section">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-3 pr-0">
+                <div class="d-flex">
+                    <div class="logo">
+                        <a href="index.html">
+                            <img src="assets/images/mainlogo.jpg" alt="" class="img-fluid">
+                        </a>
+                    </div>
+                    <div class="navigation">
+                        <i data-target="header-navigation" class="material-icons sidenav-trigger tooltipped"
+                           data-position="right" data-tooltip="Click me to navigate">menu</i>
+                        <div id="header-navigation" class="sidenav">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-12">
+                                        <span class="sidenav-close float-right p-3">
+                                            <i class="material-icons tooltipped" data-position="left"
+                                               data-tooltip="Close">close</i>
+                                        </span><br>
+                                        <div class="sidenav-wrapper">
+                                            <div class="page-list">
+                                                <h5>navigation link</h5>
+                                                <ul>
+                                                    <li><a href="#">Home</a></li>
+                                                    <li><a href="#">shop</a></li>
+                                                    <li><a href="#">about</a></li>
+                                                    <li><a href="#">contact</a></li>
+                                                    <li><a href="#">Login</a></li>
+                                                </ul>
+                                            </div>
+                                            <hr>
+                                            <div class="cat-list">
+                                                <h5>categories</h5>
+                                                <ul>
+                                                    <li><a href="#"><img src="assets/images/cat-icon.jpg" alt=""
+                                                                         class="img-fluid"> category name</a></li>
+                                                    <li><a href="#"><img src="assets/images/cat-icon.jpg" alt=""
+                                                                         class="img-fluid"> category name</a></li>
+                                                    <li><a href="#"><img src="assets/images/cat-icon.jpg" alt=""
+                                                                         class="img-fluid"> category name</a></li>
+                                                    <li><a href="#"><img src="assets/images/cat-icon.jpg" alt=""
+                                                                         class="img-fluid"> category name</a></li>
+                                                    <li><a href="#"><img src="assets/images/cat-icon.jpg" alt=""
+                                                                         class="img-fluid"> category name</a></li>
+                                                    <li><a href="#"><img src="assets/images/cat-icon.jpg" alt=""
+                                                                         class="img-fluid"> category name</a></li>
+                                                    <li><a href="#"><img src="assets/images/cat-icon.jpg" alt=""
+                                                                         class="img-fluid"> category name</a></li>
+                                                </ul>
+                                            </div>
+                                            <hr>
+                                            <div class="c-info">
+                                                <h5>Contact info</h5>
+                                                <p><i class="material-icons">call</i> +8801739852881</p>
+                                                <p><i class="material-icons">email</i> contact@beeasy.com</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="main-search">
+                    <form action="#">
+                        <div class="input-field">
+                            <input type="text" id="main-search" class="form-control">
+                            <label for="main-search">Search</label>
+                        </div>
+                        <button class="waves-effect tooltipped ml-auto my-auto border-0" data-position="right"
+                                data-tooltip="Search"><i class="fa fa-search"></i></button>
+                    </form>
+                </div>
+            </div>
+            <div class="col-md-3 pl-0">
+                <div class="user-wrapper">
+                    <ul>
+                        <li>
+                            <a href="#">
+                                <span class="cart">
+                                    <i class="material-icons">local_grocery_store</i>
+                                    <span class="item-count">0</span>
+                                </span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <span class="chat">
+                                    <i class="material-icons">chat</i>
+                                </span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <span class="account-access">
+                                    <i class="material-icons">account_circle</i>
+                                </span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+<!--header section end-->
+<!-- cart view start-->
+<section class="cart-view-section section-padding mb-5">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 mb-lg-0 mb-5">
+                <div class="cart-item-details">
+                    <ul>
+                        <li class="c-heading text-uppercase mb-4 p-3 shadow">
+                            <div class="row">
+                                <div class="col-7 d-flex">
+                                    <div class="custom-control custom-checkbox">
+                                        <input type="checkbox" class="custom-control-input" id="sa">
+                                        <label class="custom-control-label" for="sa">select all (3 item(s))</label>
+                                    </div>
+                                    <div class="delete-all d-flex ml-5">
+                                        <i class="fa fa-trash my-auto mr-1"></i>
+                                        <span>Delete</span>
+                                    </div>
+                                </div>
+                                <div class="col-5 text-center">
+                                    <div class="row">
+                                        <div class="col-6">
+                                            <span class="price">price</span>
+                                        </div>
+                                        <div class="col-6">
+                                            <span class="qty">quantity</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="c-data text-uppercase mb-4 shadow">
+                            <div class="row p-3">
+                                <div class="col-7 d-flex">
+                                    <div class="custom-control custom-checkbox">
+                                        <input type="checkbox" class="custom-control-input" id="a">
+                                        <label class="custom-control-label d-flex" for="a">
+                                            <div class="c-thumb">
+                                                <img src="assets/images/view-cart-thumb.png" alt="" class="img-fluid">
+                                            </div>
+                                            <span class="c-info ml-2">
+                                                <p class="mb-0">Lorem ipsum dolor sit amet.</p>
+                                                <p class="font-smaller mb-0 variation">product variation</p>
+                                                <span class="c-action">
+                                                    <i class="fa fa-heart mr-3"></i>
+                                                    <i class="fa fa-trash"></i>
+                                                </span>
+                                            </span>
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="col-5 text-center">
+                                    <div class="row">
+                                        <div class="col-6">
+                                            <p class="font-weight-bold text-danger m-0">৳ 100</p>
+                                            <p class="m-0">৳ <del>90</del></p>
+                                            <p class="m-0"><span>-10%</span></p>
+                                        </div>
+                                        <div class="col-6">
+                                            <div class="c-qty d-flex mt-2">
+                                                <i class="fa fa-minus m-auto bg-light p-2"></i>
+                                                <span class="m-auto">1</span>
+                                                <i class="fa fa-plus m-auto bg-light p-2"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="c-data text-uppercase mb-4 shadow">
+                            <div class="row p-3">
+                                <div class="col-7 d-flex">
+                                    <div class="custom-control custom-checkbox">
+                                        <input type="checkbox" class="custom-control-input" id="b">
+                                        <label class="custom-control-label d-flex" for="b">
+                                            <div class="c-thumb">
+                                                <img src="assets/images/view-cart-thumb.png" alt="" class="img-fluid">
+                                            </div>
+                                            <span class="c-info ml-2">
+                                                <p class="mb-0">Lorem ipsum dolor sit amet.</p>
+                                                <p class="font-smaller mb-0 variation">product variation</p>
+                                                <span class="c-action">
+                                                    <i class="fa fa-heart mr-3"></i>
+                                                    <i class="fa fa-trash"></i>
+                                                </span>
+                                            </span>
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="col-5 text-center">
+                                    <div class="row">
+                                        <div class="col-6">
+                                            <p class="font-weight-bold text-danger m-0">৳ 100</p>
+                                            <p class="m-0">৳ <del>90</del></p>
+                                            <p class="m-0"><span>-10%</span></p>
+                                        </div>
+                                        <div class="col-6">
+                                            <div class="c-qty d-flex mt-2">
+                                                <i class="fa fa-minus m-auto bg-light p-2"></i>
+                                                <span class="m-auto">1</span>
+                                                <i class="fa fa-plus m-auto bg-light p-2"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="c-data text-uppercase mb-4 shadow">
+                            <div class="row p-3">
+                                <div class="col-7 d-flex">
+                                    <div class="custom-control custom-checkbox">
+                                        <input type="checkbox" class="custom-control-input" id="c">
+                                        <label class="custom-control-label d-flex" for="c">
+                                            <div class="c-thumb">
+                                                <img src="assets/images/view-cart-thumb.png" alt="" class="img-fluid">
+                                            </div>
+                                            <span class="c-info ml-2">
+                                                <p class="mb-0">Lorem ipsum dolor sit amet.</p>
+                                                <p class="variation font-smaller mb-0">product variation</p>
+                                                <span class="c-action">
+                                                    <i class="fa fa-heart mr-3"></i>
+                                                    <i class="fa fa-trash"></i>
+                                                </span>
+                                            </span>
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="col-5 text-center">
+                                    <div class="row">
+                                        <div class="col-6">
+                                            <p class="font-weight-bold text-danger m-0">৳ 100</p>
+                                            <p class="m-0">৳ <del>90</del></p>
+                                            <p class="m-0"><span>-10%</span></p>
+                                        </div>
+                                        <div class="col-6">
+                                            <div class="c-qty d-flex mt-2">
+                                                <i class="fa fa-minus m-auto bg-light p-2"></i>
+                                                <span class="m-auto">1</span>
+                                                <i class="fa fa-plus m-auto bg-light p-2"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-lg-4">
+                <div class="cart-totals z-depth-1 rounded">
+                    <!--<div class="section-header text-center blue pt-1 pb-1">
+                        <h4 class="text-uppercase white-text"><i class="fa fa-calculator"> cart totals</i></h4>
+                    </div>-->
+                    <ul class="cart p-2">
+                        <li class="text-capitalize p-2">total items<span class="float-right">8 items</span></li>
+                        <li class="text-capitalize p-2">total Amount<span class="float-right">$ 142</span></li>
+                        <li class="text-capitalize p-2">Shipping cost<span class="float-right">$ 0.00</span></li>
+                        <li class="text-capitalize p-2">product tax<span class="float-right">$ 0.00</span></li>
+                        <li class="mt-3 mb-3">
+                            <div class="coupon-form">
+                                <form action="#">
+                                    <div class="d-flex">
+                                        <input type="text" class="form-control border m-0 mr-1 pl-2" placeholder="Enter Voucher Code" style="height: initial;">
+                                        <button type="submit" class="btn btn-primary m-0">Apply</button>
+                                    </div>
+                                </form>
+                            </div>
+                        </li>
+                        <li class="text-capitalize p-2">grand total<span class="float-right">$ 142</span></li>
+                        <div class="text-center">
+                            <a class="w-100 waves-effect waves-light btn-small white-text mt-4 font-weight-bold z-depth-1 rounded" style="background: #f57224;">proceed to checkout</a>
+                        </div>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- cart view end-->
+<!--footer section start-->
+<footer>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-lg-8">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="service-info d-flex">
+                            <div class="d-time">
+                                <p><img src="assets/images/1-hour.png" alt="" class="img-fluid"> 1 hour delivery</p>
+                            </div>
+                            <div class="d-offer">
+                                <p><img src="assets/images/cash-on-delivery.png" alt="" class="img-fluid"> cash on
+                                    delivery</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12">
+                        <div class="about-info">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. At consequatur, dolores
+                                inventore ipsa optio quisquam saepe sunt? A accusantium ad aperiam asperiores blanditiis
+                                culpa eligendi itaque, odio quaerat quam quis repellat, reprehenderit, tempora totam
+                                velit? Et impedit omnis vel. Beatae expedita modi nobis reprehenderit suscipit. Culpa
+                                minus molestias rerum saepe.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="footer-widget">
+                            <div class="f-w-title">
+                                <h5>Customer Service</h5>
+                                <hr>
+                                <ul>
+                                    <li><a href="#!">Contact Us</a></li>
+                                    <li><a href="#!">FAQ</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="footer-widget">
+                            <div class="f-w-title">
+                                <h5>About Chaldal</h5>
+                                <hr>
+                                <ul>
+                                    <li><a href="#!">Privacy Policy</a></li>
+                                    <li><a href="#!">Terms of Use</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="footer-widget">
+                            <div class="f-w-title">
+                                <h5>For Business</h5>
+                                <hr>
+                                <ul>
+                                    <li><a href="#!">Corporate</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 text-right">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="payment-option">
+                            <ul>
+                                <li class="my-auto"><span>pay with:</span></li>
+                                <li><a href="#"><img src="assets/images/Amex.png" alt="" class="img-fluid"></a></li>
+                                <li><a href="#"><img src="assets/images/mastercard.png" alt=""
+                                                     class="img-fluid"></a></li>
+                                <li><a href="#"><img src="assets/images/bkash.png" alt="" class="img-fluid"></a>
+                                </li>
+                                <li><a href="#"><img src="assets/images/COD.png" alt="" class="img-fluid"></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12">
+                        <div class="apps-info d-inline-flex float-right">
+                            <a href="#">
+                                <img src="assets/images/google_play_store.png" alt="" class="img-fluid">
+                            </a>
+                            <a href="#">
+                                <img src="assets/images/app_store.png" alt="" class="img-fluid ml-auto my-auto">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12">
+                        <div class="c-info">
+                            <p class="phone"><i class="material-icons">call</i> 01739852881
+                            </p>
+                            <p><span>or email</span> contact@beasy.com</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12">
+                        <div class="f-social-link float-right">
+                            <ul class="d-flex">
+                                <li>
+                                    <a href="#!"><img src="assets/images/Facebook.png" alt="" class="img-fluid"></a>
+                                    <a href="#!"><img src="assets/images/Youtube.png" alt="" class="img-fluid"></a>
+                                    <a href="#!"><img src="assets/images/twitter.png" alt="" class="img-fluid"></a>
+                                    <a href="#!"><img src="assets/images/Instagram.png" alt=""
+                                                      class="img-fluid"></a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+<!--mobile footer start-->
+<section class="mobile-footer d-md-none d-block">
+    <div class="d-flex">
+        <div class="mchat-wrapper">
+            <i class="fa fa-comments"></i>
+        </div>
+        <div class="shopping-btn" onclick="mobileopenNav()">
+            <a href="#">start shopping</a>
+        </div>
+        <div class="mcart-wrapper" onclick="openRightNavx()">
+            <i class="fa fa-shopping-bag"></i>
+            <span>0</span>
+        </div>
+    </div>
+</section>
+<!--footer section end-->
+
+<!--back to top-->
+<!--<div class="back_to_top_area">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="back_to_top">
+                <i class="fa fa-arrow-up"></i>
+            </div>
+        </div>
+    </div>
+</div>-->
+<!--back to end-->
+<script src="assets/js/jquery-3.3.1.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"></script>
+<script src="assets/js/bootstrap.min.js"></script>
+<script src="assets/js/materialize.min.js"></script>
+<script src="assets/js/owl.carousel.min.js"></script>
+<script src="assets/js/jquery.exzoom.js"></script>
+<!--<script src="assets/js/wow.min.js"></script>-->
+<!--<script src="assets/js/jquery.magnific-popup.min.js"></script>-->
+<script src="assets/js/custom.js"></script>
+</body>
+</html>
